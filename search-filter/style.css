@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');  
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+*::-webkit-scrollbar-track {
+    background: #3e57db;
+    border-radius: 30px;
+}
+*::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 30px;
+    shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
 * {  
  box-sizing: border-box;  
 }  
@@ -42,7 +56,8 @@ body {
 }  
 .header input:focus {  
  outline: none;  
-}  
+}
+
 .user-list {  
  background-color: #fff;  
  list-style-type: none;  
