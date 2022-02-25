@@ -3,10 +3,9 @@ import { api } from "../../src/services/api";
 import { Container } from "./styles";
 
 export function TransactionsTable() {
-    useEffect(() => {
-        api('transactions').then(response => console.log(response.data));
-    }, [])
-
+  useEffect(() => {
+    api("transactions").then((response) => console.log(response.data));
+  }, []);
 
   return (
     <Container>
@@ -25,7 +24,7 @@ export function TransactionsTable() {
               <td>Veículo</td>
               <td>25/02/21</td>
             </tr>
-            
+
             <tr>
               <td className="title">Economia Carro</td>
               <td className="deposit">R$ 500,00</td>
