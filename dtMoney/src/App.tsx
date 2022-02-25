@@ -4,8 +4,10 @@ import { Dashboard } from '../components/Dashboard/index';
 import { TransactionsTable } from '../components/TransactionsTable/index';
 import Modal from 'react-modal';
 import { useState } from "react";
+import { NewTransactionModal } from "../components/NewTransactionModal/index";
 
 
+Modal.setAppElement('#root');
 
 export function App() {
 
@@ -24,9 +26,7 @@ export function App() {
       <Header onOpenNewTransaction={handleOpenNewTransaction} />
       <Dashboard />
       <TransactionsTable />
-      <Modal isOpen={isNewTransactionModalOpen} onRequestClose={handleCloseNewTransaction}>
-                    <h1>Nova transação</h1>
-                </Modal>
+      <NewTransactionModal isOpen={isNewTransactionModalOpen} onRequestClose={handleCloseNewTransaction} />
       <GlobalStyle />
     </>
         
